@@ -269,7 +269,7 @@ xhr.onreadystatechange=function()
 
              if (tag.getElementsByTagName("Name").length==0)
              {
-                addError("Required tag \"<b>Name</b>\" missing from <a href='" + validateURL + "'>" + validateURL + "</a>";
+                addError("Required tag \"<b>Name</b>\" missing from <a href='" + validateURL + "'>" + validateURL + "</a>)";
                 addError(type + " after \ "<b>" + label + "</b>\" is invalid.");
                 addWarning("Entire category \"<b>" + catLabel + "</b>\" will be discarded.");
                 return html;
@@ -277,7 +277,7 @@ xhr.onreadystatechange=function()
 
              if(tag.getElementsByTagName("Template").length==0)
              {
-                addError("Required tag \"<b>Template</b>\" missing from <a href='" + validateURL + "'>" + validateURL + "</a>";
+                addError("Required tag \"<b>Template</b>\" missing from <a href='" + validateURL + "'>" + validateURL + "</a>");
                 addError(type + " after \ "<b>" + label + "</b>\" is invalid.");
                 addWarning("Entire category \"<b>" + catLabel + "</b>\" will be discarded.");
                 return html;
