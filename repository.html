@@ -121,7 +121,7 @@ function buildRepository(xmlhttp)
  	    if (docURL.indexOf(".")==0)   
  	      docURL= baseURL + docUri.substring(1);   
  					   
- 	    var docLink="<a target='_blank' href='" + docURL + "'> + docLabel + "</a>";   
+ 	    var docLink="<a target='_blank' href='" + docURL + "'> + docLabel + "</a>");   
        addNote("A repository documentation link is located at " + docLink);   
  
  	    documentation[i].setAttribute("uri",docURL);   
@@ -212,7 +212,7 @@ function validateCategory(type, node)
  	   
      location[0].setAttribute("uri",resolvedURL);   
    		   
-  var link="<a target='_blank' href='" + resolvedURL + "'>" + resolvedURL + "</a>";   
+  var link="<a target='_blank' href='" + resolvedURL + "'>" + resolvedURL + "</a>");   
   var html="<li>" + label + " - " + link + "</li>";
   		   
   addNote("Validating '" + label + "' " + type + " category.");   
@@ -235,7 +235,7 @@ if (documentation && documentation.length>=1)
  		if (docURL.indexOf(".")==0) 
  				docURL= baseURL + docUri.substring(1); 
  						 
- 		var docLink="<a target='_blank' href='" + docURL + "'> + docLabel + "</a>"; 
+ 		var docLink="<a target='_blank' href='" + docURL + "'> + docLabel + "</a>"); 
  		addNote("A category documentation link is located at " + docLink); 
  					 
  		documentation[i].setAttribute("uri",docURL); 
